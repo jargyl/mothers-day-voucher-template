@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nunito:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 300 100% 99%;
+    --foreground: 340 50% 30%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 340 50% 30%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 340 50% 30%;
+
+    --primary: 340 80% 75%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 60% 95%;
+    --secondary-foreground: 270 30% 40%;
+
+    --muted: 340 10% 90%;
+    --muted-foreground: 340 30% 50%;
+
+    --accent: 30 80% 85%;
+    --accent-foreground: 30 60% 40%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 340 30% 90%;
+    --input: 340 30% 90%;
+    --ring: 340 80% 75%;
+
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-mothersday-background text-foreground font-nunito overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-dancing;
+  }
+}
+
+@layer utilities {
+  .font-dancing {
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .font-nunito {
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-soft {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card-gradient {
+    background: linear-gradient(135deg, #fff5f7 0%, #fde4ea 100%);
+  }
+  
+  .writing-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .writing-animation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: white;
+    animation: writing 2s ease-out forwards;
+  }
+}
