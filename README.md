@@ -2,7 +2,7 @@
 
 A beautiful, animated gift voucher website template built with React and Framer Motion. Create stunning, interactive gift experiences for your customers with this elegant and customizable template.
 
-![Preview](public/placeholder.svg)
+![Preview](https://i.imgur.com/ve3v5CC.png)
 
 ## ✨ Features
 
